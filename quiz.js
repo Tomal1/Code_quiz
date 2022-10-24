@@ -1,9 +1,27 @@
 
+const ticker = setInterval(counting, 1000);
+
+let timer = document.querySelector("#time");
+let countdown = 15;
+ 
+function counting(){
+
+  countdown = countdown - 1;
+  if(countdown > 0){
+    return timer.innerHTML = countdown
+  } else if(countdown == 0){
+    return timer.innerHTML = "you lose";
+  }
+
+}
+
+
+
 let questionSpan = document.querySelector("#question");
 
 const tomal = [
   {
-    Q: "to start the quiz press any button",
+    Q: "to start the quiz press start button",
     A: ["start button", "start button", "start button", "start button"],
     CA: "start button",
   },
@@ -40,10 +58,6 @@ let btnAry = [btn1, btn2, btn3, btn4];
 
 let counter = 0;
 
-
-
-
-
 function nextQues(object) {
   questionSpan.innerHTML = object.Q;
   for (let i = 0; i < btnAry.length; i++) {
@@ -64,6 +78,7 @@ function nextQues(object) {
 
     } else {
       answerSpan.innerHTML = "wrong";
+      countdown = countdown - 4;
     }
     console.log(counter);
   }
