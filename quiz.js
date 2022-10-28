@@ -12,13 +12,12 @@ let btn4 = document.querySelector(".btn4");
 
 let btnAry = [btn1, btn2, btn3, btn4];
 
-function starting() {
-  //starting function
+//starting function - first thing user sees
+function starting() { 
   recordInput.style.visibility = "hidden";
   recordButton.style.visibility = "hidden";
   questionSpan.innerHTML = "press start button to play Code Quiz";
-  let rule = (answerSpan.innerHTML =
-    "you will be penalised 3 seconds for wrong selections");
+  answerSpan.innerHTML = "you will be penalised 3 seconds for wrong selections";
   btnCon.style.visibility = "hidden";
 
   let newBtn = document.createElement("button");
@@ -32,6 +31,8 @@ function starting() {
   });
 }
 starting();
+
+/*
 
 const tomal = [
   //array od objects containing question, answers and correct answer
@@ -163,3 +164,4 @@ function loser() {
     localStorage.setItem("submission", stringifyObject);
   });
 }
+*/
