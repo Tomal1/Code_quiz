@@ -11,13 +11,21 @@ gitHub repo URL: https://github.com/Tomal1/challenge_WK4_code_quiz
 ## Usage
 
 When the user clicks on the start button, a series of questions and four different answers for each questions are displayed. 
-If the correct answer is selected then the message "correct" will be displayed otherwise "wrong" is displayed.
-If all 4 questions are answered correctly, the message; "you win" will be displayed.
-The app has a timer of 15 seconds and each time wrong answer is selected, a deduction of 4 seconds is penalised from the timer.
 
-the Quiz is not yet completed and will be submitted again!
+![alt text](assets/images/startScreen.png)
 
-//![alt text](assets/images/picture.png)
+The app has a timer of 15 seconds initiated when the start button is selected and each time wrong answer is selected, a deduction of 3 seconds is penalised from the timer.
+![alt text](assets/images/wrongSelection.png)
+
+If the correct answer is selected then the message "correct" will be displayed and next question is displayed, otherwise "wrong" is displayed and 3 seconds is deducted.
+
+If the time runs out, the message; "you lose" will be displayed and allowing you to submit your score to local storage.
+![alt text](assets/images/timeRunOut.png)
+
+If all 4 questions are answered correctly, the message; "you win" will be displayed and allowing you to submit your score to local storage.
+
+
+
 
 
 ## License
