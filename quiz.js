@@ -32,8 +32,6 @@ function starting() {
 }
 starting();
 
-/*
-
 const tomal = [
   //array od objects containing question, answers and correct answer
   {
@@ -164,4 +162,4 @@ function loser() {
     localStorage.setItem("submission", stringifyObject);
   });
 }
-*/
+
