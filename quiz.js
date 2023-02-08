@@ -78,9 +78,9 @@ function counting() {
   } else if (counter >= tomal.length) {
     clearInterval(counting);
   } else if (countdown == 0) {
-    timer.innerHTML = loser();
     btnCon.style.visibility = "hidden";
     answerSpan.style.visibility = "hidden";
+    timer.innerHTML = ending();
   }
 }
 
@@ -92,7 +92,7 @@ function someFunc(arg, object) {
     if (counter >= tomal.length) {
       btnCon.style.visibility = "hidden";
       questionSpan.style.visibility = "hidden";
-      return (answerSpan.innerHTML = winner());
+      return (answerSpan.innerHTML = ending("win"));
     }
     nextQues(tomal[counter]);
   } else {
@@ -107,39 +107,19 @@ for (let i = 0; i < btnAry.length; i++) {
   });
 }
 
-function winner() {
-  //winner function
+
+function ending(arg){
+
   questionSpan.style.visibility = "visible";
-  questionSpan.innerHTML =
+
+  if(arg === "win"){
+    questionSpan.innerHTML =
     "You Win, enter initials to save your score to local storage";
-  answerSpan.style.visibility = "hidden";
-  recordInput.style.visibility = "visible";
-  recordButton.style.visibility = "visible";
-
-  recordButton.addEventListener("click", function () {
-    const initials = recordInput.value;
-    const scoreValue = score.innerHTML;
-
-    const submissionObject = {
-      initials: initials,
-      scoreValue: scoreValue,
-    };
-
-    let paragraph = document.createElement("p");
-    paragraph.innerHTML =
-      "initials: " + initials + " score value: " + scoreValue;
-    document.body.append(paragraph);
-
-    const stringifyObject = JSON.stringify(submissionObject);
-    localStorage.setItem("submission", stringifyObject);
-  });
-}
-
-function loser() {
-  // loser function works exactly the same way as winner function
-  questionSpan.style.visibility = "visible";
-  questionSpan.innerHTML =
+  }else{
+    questionSpan.innerHTML =
     "You Lose, enter initials to save your score to local storage";
+  }
+
   answerSpan.style.visibility = "hidden";
   recordInput.style.visibility = "visible";
   recordButton.style.visibility = "visible";
@@ -162,4 +142,3 @@ function loser() {
     localStorage.setItem("submission", stringifyObject);
   });
 }
-
