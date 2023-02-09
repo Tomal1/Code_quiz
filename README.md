@@ -24,10 +24,6 @@ If the time runs out, the message; "you lose" will be displayed and allowing you
 
 If all 4 questions are answered correctly, the message; "you win" will be displayed and allowing you to submit your score to local storage.
 
-
-
-
-
 ## License
 
 Please refer to the LICENSE in the repo.
