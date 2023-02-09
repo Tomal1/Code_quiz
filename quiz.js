@@ -4,6 +4,8 @@ let btnCon = document.querySelector("#btn_con");
 let score = document.querySelector("#score");
 let recordInput = document.querySelector("#record_input");
 let recordButton = document.querySelector("#record_button");
+let container = document.querySelector("#container");
+
 
 let btn1 = document.querySelector(".btn1");
 let btn2 = document.querySelector(".btn2");
@@ -20,13 +22,14 @@ function starting() {
   answerSpan.innerHTML = "you will be penalised 3 seconds for wrong selections";
   btnCon.style.visibility = "hidden";
 
-  let newBtn = document.createElement("button");
-  newBtn.innerHTML = "start button";
-  document.body.appendChild(newBtn);
+  let startBtn = document.createElement("button");
+  startBtn.innerHTML = "start button";
+  startBtn.classList.add ("startBtn");
+  container.appendChild(startBtn);
 
-  newBtn.addEventListener("click", function () {
+  startBtn.addEventListener("click", function () {
     setInterval(counting, 1000);
-    newBtn.remove();
+    startBtn.remove();
     nextQues(tomal[0]);
   });
 }
@@ -95,9 +98,7 @@ function background(arg){
 
 }
 
-
-
-  function someFunc(arg, object) {
+function someFunc(arg, object) {
   if (arg === object.CA) {
     answerSpan.innerHTML = "correct";
     counter++;
@@ -130,7 +131,6 @@ function ending(arg){
   if(arg === "win"){
     questionSpan.innerHTML =
     "You Win, enter initials to save your score to local storage";
-    clearInterval(counting);
   }else{
     questionSpan.innerHTML =
     "You Lose, enter initials to save your score to local storage";
