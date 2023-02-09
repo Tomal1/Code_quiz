@@ -1,8 +1,8 @@
 # Code Quiz
 
 ## Description
-This is the Forth assignment, the task was to create a functional app from scratch which provides a series of questions and must be answered correctly to win/complete the app/game.
-
+An interactive client side web application; it will display a series of questions and must be answered with the correct option to complete the app/game.
+A time limit of 15 seconds has been provided and all answers must be completed before that time.
 
 deployed website URL: https://tomal1.github.io/challenge_WK4_code_quiz/
 
