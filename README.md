@@ -1,8 +1,8 @@
 # Code Quiz
 
 ## Description
-An interactive client side web application; it will display a series of questions and must be answered with the correct option to complete the app/game.
-A time limit of 15 seconds has been provided and all answers must be completed before that time.
+An interactive client side web application will display a series of questions and must be answered correctly complete the quiz.
+A time limit of 15 seconds will be set and all answers must be completed before the time runs out.
 
 deployed website URL: https://tomal1.github.io/challenge_WK4_code_quiz/
 
@@ -10,7 +10,7 @@ gitHub repo URL: https://github.com/Tomal1/challenge_WK4_code_quiz
 
 ## Usage
 
-When the user clicks on the start button, a series of questions and four different answers for each questions are displayed. 
+When the user clicks on the start button, a series of questions and four different answers for each questions will be displayed. 
 
 ![alt text](assets/images/startScreen.png)
 
