@@ -31,7 +31,6 @@ function starting() {
   });
 }
 starting();
-
 const tomal = [
   //array od objects containing question, answers and correct answer
   {
@@ -115,6 +114,7 @@ function ending(arg){
   if(arg === "win"){
     questionSpan.innerHTML =
     "You Win, enter initials to save your score to local storage";
+    clearInterval(counting);
   }else{
     questionSpan.innerHTML =
     "You Lose, enter initials to save your score to local storage";
