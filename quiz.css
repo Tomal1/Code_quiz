@@ -8,13 +8,13 @@
 
 header{
     background-color: black;
-    height: 10%;
+    height: 60px;
 }
 
 header h1 {
     display: flex;
     justify-content: start;
-    padding: 10px;
+    padding: 20px 0px 20px 20px;
 }
 
 #container{
@@ -33,18 +33,18 @@ button{
 }
 
 button:hover{
+    cursor: pointer;
     scale: 1.05;
-    transition: 0.5s;
-    box-shadow: 0px 5px 5px 0px;
+    transition: 1s;
+    box-shadow: 5px 5px 5px 0px;
     background-color: black;
     border-color: blueviolet;
-
 }
-
 
 #container .startBtn{
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     bottom: 50px;
 }

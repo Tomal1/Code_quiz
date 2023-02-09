@@ -94,7 +94,7 @@ function background(arg){
   } 
   setTimeout( () =>{
       document.body.style.backgroundColor = "white";
-  }, 1000)
+  }, 300)
 
 }
 
