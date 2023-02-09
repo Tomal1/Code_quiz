@@ -16,6 +16,7 @@ body{
     border: 2px solid black;
     border-radius: 5%;
     width: 50vw;
+    background-color: white;
 }
 
 button{

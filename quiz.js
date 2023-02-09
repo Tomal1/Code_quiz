@@ -83,11 +83,26 @@ function counting() {
   }
 }
 
-function someFunc(arg, object) {
+function background(arg){
+  if (arg === "correct"){
+    document.body.style.backgroundColor = "green";
+  } else{
+    document.body.style.backgroundColor = "red";
+  } 
+  setTimeout( () =>{
+      document.body.style.backgroundColor = "white";
+  }, 1000)
+
+}
+
+
+
+  function someFunc(arg, object) {
   if (arg === object.CA) {
     answerSpan.innerHTML = "correct";
     counter++;
     score.innerHTML++;
+    background("correct")
     if (counter >= tomal.length) {
       btnCon.style.visibility = "hidden";
       questionSpan.style.visibility = "hidden";
@@ -97,6 +112,7 @@ function someFunc(arg, object) {
   } else {
     answerSpan.innerHTML = "wrong";
     countdown = countdown - 3;
+    background();
   }
 }
 
