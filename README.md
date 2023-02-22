@@ -4,7 +4,7 @@
 An interactive client side web application will display a series of questions and must be answered correctly complete the quiz.
 A time limit of 15 seconds will be set and all answers must be completed before the time runs out.
 
-deployed website URL: https://tomal1.github.io/challenge_WK4_code_quiz/
+deployed website URL: https://tomal1.github.io/Code_quiz/
 
 gitHub repo URL: https://github.com/Tomal1/challenge_WK4_code_quiz
 
