@@ -1,14 +1,14 @@
-*{
+* {
     margin: auto;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Bradley Hand;
     text-align: center;
     font-size: 20px;
-    color: blueviolet;
 }
 
-header{
-    background-color: black;
+header {
+    background-image: linear-gradient(90deg, black, white);
     height: 60px;
+    color: white;
 }
 
 header h1 {
@@ -17,10 +17,10 @@ header h1 {
     padding: 20px 0px 20px 20px;
 }
 
-header #images{
+header #images {
     position: absolute;
     margin: 10px 0px 0px 0px;
-    top:0px;
+    top: 0px;
     right: 20px;
 }
 
@@ -29,13 +29,13 @@ img {
     margin: 0px 0px 0px 10px;
 }
 
-img:hover{
+img:hover {
     cursor: pointer;
     scale: 1.1;
     transition: 1s;
 }
 
-#container{
+#container {
     border-radius: 5%;
     top: 100px;
     width: 50vw;
@@ -43,14 +43,14 @@ img:hover{
     margin-top: 10px;
 }
 
-button{
+button {
     border-style: none;
     height: 50px;
     width: 200px;
     background-color: white;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     scale: 1.05;
     transition: 1s;
@@ -59,7 +59,7 @@ button:hover{
     border-color: blueviolet;
 }
 
-#container .startBtn{
+#container .startBtn {
     position: relative;
     display: flex;
     justify-content: center;
